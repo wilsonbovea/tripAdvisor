@@ -385,17 +385,22 @@ header > section {
   color: #04a96c;
 }
 /* --------------------- */
+
 .main-guide {
   margin-bottom: 60px;
   display: flex;
   gap: 22px;
+
+  max-width: 1096px;
 }
-.main-guide > div {
-  width: calc(100% / 3);
+.div-autor {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 44px) / 3);
   flex-shrink: 0;
 }
 .div-img {
-  height: 70%;
+  height: 65%;
 
   overflow: hidden;
   margin-bottom: 10px;
@@ -558,7 +563,7 @@ footer img {
     flex-wrap: nowrap;
     overflow: scroll;
   }
-  .main-guide > div {
+  .div-autor {
     width: calc(100% / 2.5);
   }
   .country-city,
@@ -647,10 +652,9 @@ footer img {
   }
 
   .main-guide {
-    flex-wrap: nowrap;
     overflow: scroll;
   }
-  .main-guide > div {
+  .div-autor {
     width: calc(100% / 1.5);
   }
 
